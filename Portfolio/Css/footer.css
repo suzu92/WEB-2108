@@ -1,0 +1,12 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: darkgoldenrod;
+    font-family: "Courier New", serif;
+    font-size: .7em;
+    text-align: center;
+    padding: 1em;
+}
