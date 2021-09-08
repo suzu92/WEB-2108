@@ -1,0 +1,28 @@
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.navbar-item {
+    float: left;
+}
+
+.navbar-link {
+    display: block;
+    color: darkgoldenrod;
+    text-align: center;
+    padding: .84em 1em;
+    text-decoration: none;
+    font-family: "Courier New", serif ;
+}
+
+.navbar-link:hover:not(.active) {
+    color: black;
+}
+
+.active {
+    color: goldenrod;
+}
