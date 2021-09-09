@@ -21,3 +21,36 @@ body {
     transform: translate(-50%, -50%);
     color: darkgoldenrod;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: white;
+    color: darkgoldenrod;
+    padding: 2em;
+    text-align: left;
+}
+
+.column {
+    float: left;
+    padding: 1em;
+}
+
+.column.left {
+    width: 40%;
+}
+
+.column.right {
+    width: 60%;
+    background-image: url("ship.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
