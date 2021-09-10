@@ -67,3 +67,18 @@ caption {
 iframe {
     border: darkgoldenrod; border: 2em;
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    width: 300px;
+    margin: 10px;
+    transition: 0.1s;
+}
+img:hover {
+    transform: scale(1.1);
+}
