@@ -63,3 +63,7 @@ caption {
     text-align: left;
     margin: .5em;
 }
+
+iframe {
+    border: darkgoldenrod; border: 2em;
+}
