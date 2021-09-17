@@ -10,6 +10,7 @@ body {
 h1 {
     color: darkgoldenrod;
     text-align: left;
+    padding: 1em;
 }
 
 h2, h3, h4, h5, h6 {
@@ -17,6 +18,9 @@ h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+ul {
+    margin: -1.5em;
+}
 
 /*Index sidan
 .index-image {
@@ -52,24 +56,36 @@ button:hover, button:active {
 }
 /*---------------*/
 
-
-header {
-    color: darkgoldenrod;
-    padding: 2em;
-    text-align: left;
-}
-
-
-table, td {
+/*Courses sidan*/
+table, th, td {
     border: .5em solid white;
     border-collapse: collapse;
-    margin: 2em;
 }
 
-td {
+th, td {
     background-color: darkgoldenrod;
     color: white;
 }
+
+.kurser {
+    width: 100%;
+}
+
+@media only screen and (max-width: 678px) {
+    .kurser {
+
+    }
+}
+
+.skol-btn {
+    border: transparent;
+    font-style: italic;
+    color: #ffffff;
+    background-color: darkgoldenrod;
+    text-decoration: none;
+}
+/*----------------*/
+
 
 .about-me {
     display: flex;
