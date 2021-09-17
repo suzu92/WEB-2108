@@ -7,10 +7,22 @@
     <link rel="stylesheet" href="Css/footer.css">
     <link rel="stylesheet" href="Css/navbar.css">
     <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/products.css">
 </head>
 <body>
 
 <nav>
+    <section class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <section class="dropdown-content">
+            <a href="index.html">Index</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="blogg.html">Blog</a>
+            <a class="active" href="#">Products</a>
+            <a href="other.html">Other</a>
+        </section>
+    </section>
     <ul id="navbar">
         <li class="navbar-item">
             <a class="navbar-link" href="index.html">Index</a>
@@ -37,6 +49,59 @@
     <h1>Products: <br>
         My artwork</h1>
 </header>
+
+<main>
+    <section class="wrapper">
+        <div class="product-img">
+            <img src="cup.png" alt="cup">
+        </div>
+        <div class="product-info">
+            <div class="product-text">
+                <h1>Printed cup</h1>
+                <h4>BY SUSANNA</h4>
+                <p>A personalized cup with a print of your choice</p>
+            </div>
+            <div class="price-btn">
+                <p>100 SEK</p>
+                <button type="button">PURCHASE</button>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section class="wrapper">
+        <div class="product-img">
+            <img src="phonecase.png" alt="phonecase">
+        </div>
+        <div class="product-info">
+            <div class="product-text">
+                <h1>Printed phonecase</h1>
+                <h4>BY SUSANNA</h4>
+                <p>A personalized phonecase with a print of your choice</p>
+            </div>
+            <div class="price-btn">
+                <p>100 SEK</p>
+                <button type="button">PURCHASE</button>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section class="wrapper">
+        <div class="product-img">
+            <img src="notepad.png" alt="notepad">
+        </div>
+        <div class="product-info">
+            <div class="product-text">
+                <h1>Printed notepad</h1>
+                <h4>BY SUSANNA</h4>
+                <p>A personalized notepad with a print of your choice</p>
+            </div>
+            <div class="price-btn">
+                <p>100 SEK</p>
+                <button type="button">PURCHASE</button>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer>
     <p>All rights reserved © Susanna Tuvestad, 2021</p>

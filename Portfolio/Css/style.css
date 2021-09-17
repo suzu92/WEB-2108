@@ -1,10 +1,26 @@
-body {
-    margin: 0;
-    font-family: "Courier New", serif
+* {
+    box-sizing: border-box;
 }
 
+body {
+    margin: 2em;
+    font-family: "Courier New", serif;
+}
+
+h1 {
+    color: darkgoldenrod;
+    text-align: left;
+}
+
+h2, h3, h4, h5, h6 {
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+
+/*Index sidan*/
 .index-image {
-    background-image: url("ship.jpg");
+    background-image: url("skog.JPG");
     background-color: white;
     height: 35em;
     background-position: center;
@@ -19,15 +35,25 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: darkgoldenrod;
+    color: white;
 }
 
-* {
-    box-sizing: border-box;
+button:link, button:visited {
+    background-color: white;
+    color: darkgoldenrod;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
+
+button:hover, button:active {
+    background-color: goldenrod;
+}
+/*---------------*/
+
 
 header {
-    background-color: white;
     color: darkgoldenrod;
     padding: 2em;
     text-align: left;
@@ -37,6 +63,7 @@ header {
 table, td {
     border: .5em solid white;
     border-collapse: collapse;
+    margin: 2em;
 }
 
 td {
@@ -46,31 +73,61 @@ td {
 
 caption {
     text-align: left;
-    margin: .5em;
+    margin: 2em;
 }
 
 iframe {
-    border: darkgoldenrod;
-    border: 2em;
+    border: 1px darkgoldenrod solid;
+    margin: 2em;
+    display: flex;
+
 }
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.about-me .about-text {
+    flex: 1;
+    padding: 2em;
+}
+
+.about-image {
+    max-width: 50%;
+}
+
+/*@media (max-width: 700px) {
+    .about-text, .about-image {
+        flex: 100%;
+    }
+}*/
 
 .container {
-    border: 1em solid darkgoldenrod;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 20px 40px 40px;
+    justify-items: flex-start;
 }
 
-.container-text {
-    align-self: flex-end;
+.container img {
+    max-width: 50%;
 }
 
-.container-img {
-    align-self: flex-start;
+.comment {
+    width: 40%;
+    height: 100px;
+    padding: 1em;
+    background-color: darkgoldenrod;
+    color: white;
+    margin: 2em;
 }
 
-img {
+input {
+    display: block;
+    margin: 2em;
+}
+
+/* img {
     width: 300px;
     margin: 10px;
     transition: 0.1s;
@@ -78,4 +135,5 @@ img {
 
 img:hover {
     transform: scale(1.1);
-}
+}*/
+
