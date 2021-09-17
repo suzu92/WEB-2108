@@ -102,30 +102,22 @@ th, td {
 }
 /*----------------*/
 
-
-
-
-/*@media (max-width: 700px) {
-    .about-text, .about-image {
-        flex: 100%;
-    }
-}*/
-
-.container {
-    display: flex;
-    justify-items: flex-start;
+/*Blog sidan*/
+img {
+    max-width: 100%;
 }
 
-.container img {
-    max-width: 50%;
+form {
+    margin: -1.5em;
+    padding-bottom: 2em;
 }
 
 .comment {
     width: 40%;
     height: 100px;
     padding: 1em;
-    background-color: darkgoldenrod;
-    color: white;
+    background-color: white;
+    color: darkgoldenrod;
     margin: 2em;
 }
 
@@ -133,6 +125,8 @@ input {
     display: block;
     margin: 2em;
 }
+/*----------------*/
+
 
 /* img {
     width: 300px;
