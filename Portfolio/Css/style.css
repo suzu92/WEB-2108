@@ -16,6 +16,7 @@ h1 {
 h2, h3, h4, h5, h6 {
     color: darkgoldenrod;
     text-align: center;
+    padding-top: 1em;
 }
 
 ul {
@@ -56,6 +57,21 @@ button:hover, button:active {
 }
 /*---------------*/
 
+/*About me sidan*/
+ul#about-menu li{
+    display: inline;
+    color: white;
+    padding: .5em;
+    background-color: darkgoldenrod;
+    float: left;
+}
+
+.about-image {
+    max-width: 100%;
+    padding-top: 2em;
+}
+/*---------------*/
+
 /*Courses sidan*/
 table, th, td {
     border: .5em solid white;
@@ -87,20 +103,7 @@ th, td {
 /*----------------*/
 
 
-.about-me {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
 
-.about-me .about-text {
-    flex: 1;
-    padding: 2em;
-}
-
-.about-image {
-    max-width: 50%;
-}
 
 /*@media (max-width: 700px) {
     .about-text, .about-image {
