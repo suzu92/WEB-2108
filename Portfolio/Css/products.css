@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 26em;
+    width: 40em;
+    box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+    float: left;
+    height: 26em;
+    width: 18em;
+}
+
+img {
+    height: 26em;
+    width: 18em;
+}
+
+.product-info {
+    float: left;
+    height: 26em;
+    width: 18em;
+    background-color: white;
+}
+
+.product-text h1 {
+    margin: 0 0 0 1.5em;
+    padding-top: 2em;
+    font-family: "Courier New", sans-serif;
+}
+
+.product-text h4 {
+    margin: 1em 0 0 3em;
+    font-family: "Courier New", sans-serif;
+    color: darkgoldenrod;
+    letter-spacing: 0.2em;
+}
+
+.product-text p {
+    margin: 2em 0 0 3em;
+    font-family: "Courier New", serif;
+}
+
+.price-btn {
+    height: 9em;
+    width: 20em;
+    position: relative;
+}
+
+.price-btn p {
+    display: inline-block;
+    position: absolute;
+    height: 3em;
+    font-family: "Courier New", serif;
+    margin: 3em;
+    font-size: 1em;
+    font-weight: lighter;
+    color: darkgoldenrod;
+}
+
+.price-btn button {
+    float: right;
+    display: inline-block;
+    height: 3em;
+    width: 10em;
+    margin: 2em;
+    border: transparent;
+    font-family: "Courier New", sans-serif;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: darkgoldenrod;
+}
+
+.price-btn button:hover {
+    background-color: goldenrod;
+}
