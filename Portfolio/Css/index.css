@@ -40,3 +40,15 @@ button:hover, button:active {
     background-color: goldenrod;
 }
 /*---------------*/
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: darkgoldenrod;
+    font-family: "Courier New", serif;
+    font-size: .7em;
+    text-align: center;
+    padding-top: 5em;
+}

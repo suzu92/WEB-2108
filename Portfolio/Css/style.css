@@ -129,6 +129,128 @@ input {
 
 /*Products sidan*/
 
+.item-a {
+    grid-area: cup-a;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+
+.item-b {
+    grid-area: text-b;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+
+.item-c {
+    grid-area: text-c;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+
+.item-d {
+    grid-area: phonecase-d;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+
+.item-e {
+    grid-area: notepad-e;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+
+.item-f {
+    grid-area: text-f;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+
+.product-text h1 {
+    margin: 0 0 0 .75em;
+    padding-top: 2em;
+    font-family: "Courier New", sans-serif;
+}
+
+.product-text p {
+    margin: 2em 1em 1em 3em;
+    font-family: "Courier New", serif;
+}
+
+.price-btn {
+    height: 9em;
+    width: 20em;
+    position: relative;
+}
+
+.price-btn p {
+    display: inline-block;
+    position: absolute;
+    height: 3em;
+    font-family: "Courier New", serif;
+    margin: 3em;
+    font-size: 1em;
+    font-weight: lighter;
+    color: darkgoldenrod;
+}
+.price-btn button {
+    float: right;
+    display: inline-block;
+    height: 3em;
+    width: 10em;
+    margin: 2em;
+    border: transparent;
+    font-family: "Courier New", sans-serif;
+    font-size: 1em;
+    letter-spacing: .2em;
+    color: white;
+    background-color: darkgoldenrod;
+}
+
+.price-btn button:hover {
+    background-color: goldenrod;
+}
+
+img {
+    margin-bottom: 2em;
+    padding: 2em;
+    max-width: 100%;
+}
+
+/*mobile*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+            "cup-a"
+            "text-b"
+            "text-c"
+            "phonecase-d"
+            "notepad-e"
+            "text-f";
+    overflow: hidden;
+    box-shadow: 20px 10px 10px gray;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+/*tablet and desktop*/
+@media only screen and (min-width: 678px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "cup-a text-b"
+            "text-c phonecase-d"
+            "notepad-e text-f";
+    }
+}
 
 /*---------------*/
 
@@ -140,3 +262,17 @@ iframe {
     height: 300px;
 }
 /*--------------*/
+
+/*Footer*/
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: darkgoldenrod;
+    font-family: "Courier New", serif;
+    font-size: .7em;
+    text-align: center;
+    padding-top: 5em;
+}
+/*--------------------*/
