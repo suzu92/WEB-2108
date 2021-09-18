@@ -9,7 +9,7 @@ body {
 
 /*Index sidan*/
 .index-image {
-    background-image: url("skog.JPG");
+    background-image: url("../IMG/skog.JPG");
     background-color: white;
     height: 35em;
     background-position: center;
