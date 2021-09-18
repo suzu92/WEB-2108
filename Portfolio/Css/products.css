@@ -3,6 +3,8 @@
     grid-area: cup-a;
     height: 26em;
     width: 18em;
+    margin-left: 5em;
+    margin-top: 5em;
 }
 
 .item-b {
@@ -21,13 +23,20 @@
     grid-area: phonecase-d;
     height: 26em;
     width: 18em;
+    margin-top: 3em;
+    margin-left: 3em;
+}
 
+.item-d img {
+    width: 60%;
 }
 
 .item-e {
     grid-area: notepad-e;
     height: 26em;
     width: 18em;
+    margin-left: 3em;
+    margin-top: 3em;
 }
 
 .item-f {
@@ -37,7 +46,7 @@
 }
 
 .product-text h1 {
-    margin: 0 0 0 1.5em;
+    margin: 0 0 0 .75em;
     padding-top: 2em;
     font-family: "Courier New", sans-serif;
 }
@@ -80,6 +89,7 @@
     border: transparent;
     font-family: "Courier New", sans-serif;
     font-size: 1em;
+    letter-spacing: .2em;
     color: white;
     background-color: darkgoldenrod;
 }
@@ -102,10 +112,11 @@
             "notepad-e"
             "text-f";
     overflow: hidden;
+    box-shadow: 20px 10px 10px gray;
 }
 
 /*tablet and desktop*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 678px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
