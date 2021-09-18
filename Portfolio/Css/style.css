@@ -127,21 +127,16 @@ input {
 }
 /*----------------*/
 
+/*Products sidan*/
 
-/* img {
-    width: 300px;
-    margin: 10px;
-    transition: 0.1s;
-}
 
-img:hover {
-    transform: scale(1.1);
-}*/
+/*---------------*/
 
+
+/*Other sidan*/
 iframe {
     border: 1px darkgoldenrod solid;
     width: 100%;
     height: 300px;
-
 }
-
+/*--------------*/

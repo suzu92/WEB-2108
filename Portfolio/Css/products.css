@@ -1,29 +1,39 @@
-* {
-    box-sizing: border-box;
-}
 
-.wrapper {
-    height: 26em;
-    width: 40em;
-    box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.15);
-}
-
-.product-img {
-    float: left;
+.item-a {
+    grid-area: cup-a;
     height: 26em;
     width: 18em;
 }
 
-img {
+.item-b {
+    grid-area: text-b;
     height: 26em;
     width: 18em;
 }
 
-.product-info {
-    float: left;
+.item-c {
+    grid-area: text-c;
     height: 26em;
     width: 18em;
-    background-color: white;
+}
+
+.item-d {
+    grid-area: phonecase-d;
+    height: 26em;
+    width: 18em;
+
+}
+
+.item-e {
+    grid-area: notepad-e;
+    height: 26em;
+    width: 18em;
+}
+
+.item-f {
+    grid-area: text-f;
+    height: 26em;
+    width: 18em;
 }
 
 .product-text h1 {
@@ -70,10 +80,38 @@ img {
     border: transparent;
     font-family: "Courier New", sans-serif;
     font-size: 1em;
-    color: #ffffff;
+    color: white;
     background-color: darkgoldenrod;
 }
 
 .price-btn button:hover {
     background-color: goldenrod;
+}
+
+
+/*mobile*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+            "cup-a"
+            "text-b"
+            "text-c"
+            "phonecase-d"
+            "notepad-e"
+            "text-f";
+    overflow: hidden;
+}
+
+/*tablet and desktop*/
+@media only screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "cup-a text-b"
+            "text-c phonecase-d"
+            "notepad-e text-f";
+    }
 }
