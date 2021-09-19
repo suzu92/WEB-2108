@@ -1,6 +1,10 @@
 # Projektplan och dokumentation
 
-## Förberedelser
+## Förberedelser och planering
+![plan](IMG/plan.png)
+![plan1](IMG/plan1.png)
+![plan2](IMG/plan2.png)
+![plan3](IMG/plan3.png)
 
 ## Tillvägagångssätt
 
