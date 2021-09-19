@@ -31,14 +31,28 @@ från min favorit film.
 
 ![plan3](IMG/plan3.png)
 
-## Tillvägagångssätt
+## Tillvägagångssätt, tutorials och saker vi gick igenom efter jag försökt göra dem själv
 
-Eftersom navbar och footer skulle vara med på alla sidor började jag med dem först.
-
-## Tutorials och saker vi gick igenom efter jag försökt göra dem själv
-
+Efter att vi skapat en portfolio directory på föreläsningen den 7 september så började jag med att skapa en html fil för
+varje sida. Till början hade jag även tre css filer, style, nav och footer. Eftersom navbar och footer skulle vara med 
+på alla sidor började jag med dem först. Nav och footer gjorde jag med hjälp av det vi gått igenom på kursen medan 
+index gjorde jag med hjälp av en W3School tutorial för hero image. Jag ville ha en bakgrundsbild att täcka hela sidan 
+och sen ha text och en länk ovanpå. W3 förklarade väldigt enkelt hur man skulle göra. Det bråkade dock lite med h1 i det 
+gemensamma style dokumentet så index fick ett eget stylesheet. Jag lade in nav och footer i alla html filer och började
+sedan jobba på table till kurserna och texten i om mig sidan. Jag ville först ha texten och bilden i about bredvid 
+varandra men fick inte riktigt till det. Jag tog en paus från det genom att följa en W3 tutorial på iframe. Först funkade
+inte länken men jag googlade på det och insåg att det behövdes ett embedded i länken till youtube. Till blogginlägget
+så var min idé att ha som ett galleri och testade lite med flexbox för att få till det. Det tog lång tid och mycket pill
+för lite resultat. Vi hade ännu inte gått igenom det på kursen och jag förstod inte riktigt andras förklaringar.
+Här någonstans insåg jag att jag behövde göra nav mobilvänlig och det gick hyfsat att lösa efter lite problemlösning och
+W3 tips. Upptäckte även hur jag kallat en h1 för header på varje sida, så gjorde om det och la den i main.
+Hittade en tutorial för hur man kunde göra produkt kort [här](https://codepen.io/ff0004-red/pen/WxJEJZ). 
+Funderade dock på att byta till en två kolumns layout med grid efter att vi gått igenom det på en föreläsning. 
 Eftersom vi bara hade genomgång av nya saker på måndagar och tisdagar så blir det ju lätt så att något som betett sig 
-problematiskt eller varit svårt att hitta lösningen på får sitt svar under lektionen.
+problematiskt eller varit svårt att hitta lösningen på får sitt svar under lektionen. Kan också vara ett sätt att hitta
+andra lösningar och våga prova nytt eller ännu bättre, våga göra fel och göra om. Vilket jag verkligen vill ta till mig
+och göra till nästa gång. Denna veckan känns som om det bara blivit att snygga till, rensa och omorganisera i mappar. 
+Det känns som det blivit överflödig kod och nödlösningar för att göra sidorna mobilvänliga istället för att börja där.
 
 ## Lättläst, responsiv och fungera på olika enheter
 
@@ -58,7 +72,9 @@ vid sida i desktop läge och under varandra i mobilläge. Den sista sidan som ja
 mobilläge var kurs sidan. Det blir ett problem att se över när jag har tid, om det går att lägga in en table i grid eller
 flexbox. Det hade varit snyggt om den i mobilläge gick att lägga HT21, VT22 och HT22 under varandra men i nuläget så styr 
 table mycket av utseendet på sidan i mobilläge. Menyn blir mindre och ligger mer till vänster, ej centrerat, och text 
-mycket smalare och lägger sig också till vänster. Det känns lite halvfärdigt men det går iallafall att se hela sidan. 
+mycket smalare och lägger sig också till vänster. Det känns lite halvfärdigt men det går iallafall att se hela sidan.
+Om det blir så att vi får en vecka till på oss, förstod inte riktigt vad som skrivits på discord i veckan,
+kommer jag försöka fixa den framförallt.
 
 När det gäller olika webbläsare så tror jag att fastnade lite i att bara använda Chrome. Jag började väldigt sent med att
 kolla responsiviteten i olika webbläsare. I Chrome och Safari såg allt likadant ut men Firefox betedde sig inte alls på
