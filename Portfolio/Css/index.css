@@ -1,0 +1,51 @@
+/*Index sidan*/
+.index-image {
+    background-image: url("../IMG/skog.JPG");
+    background-color: white;
+    height: 35em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.index-text h1 {
+    text-align: center;
+    position: relative;
+    padding-top: 5em;
+    padding-bottom: 0;
+    font-size: 2em;
+    color: white;
+}
+
+.index-text h3 {
+    text-align: center;
+    position: relative;
+    padding-bottom: 3em;
+    color: white;
+}
+
+.index-text button {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 3em;
+    width: 7em;
+    border: transparent;
+    font-family: "Courier New", sans-serif;
+    font-size: 1em;
+    letter-spacing: .2em;
+    background-color: white;
+}
+
+.index-btn a:link, a:visited {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+button:hover, button:active {
+    background-color: goldenrod;
+}
+/*---------------*/

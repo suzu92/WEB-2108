@@ -23,7 +23,7 @@ ul {
     margin: -1.5em;
 }
 
-/*Index sidan*/
+/*Index sidan
 .index-image {
     background-image: url("../IMG/skog.JPG");
     background-color: white;
@@ -146,7 +146,7 @@ input {
 }
 /*----------------*/
 
-/*Products sidan*/
+/*Products sidan
 
 .item-a {
     grid-area: cup-a;
@@ -241,7 +241,7 @@ img {
     max-width: 100%;
 }
 
-/*mobile*/
+/*mobile
 .container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -259,7 +259,7 @@ img {
     margin-bottom: 2em;
 }
 
-/*tablet and desktop*/
+/*tablet and desktop
 @media only screen and (min-width: 678px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
@@ -290,7 +290,7 @@ iframe {
 
 /*--------------*/
 
-/*Navbar*/
+/*Navbar
 
 .dropbtn {
     background-color: white;
@@ -339,7 +339,7 @@ iframe {
 }
 
 
-/*Desktop*/
+/*Desktop
 
 @media only screen and (min-width: 678px) {
     #navbar {
@@ -386,7 +386,7 @@ iframe {
 }
 /*---------------*/
 
-/*Footer*/
+/*Footer
 footer {
     position: relative;
     bottom: 0;
