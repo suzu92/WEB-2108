@@ -3,7 +3,7 @@
 }
 
 body {
-    margin: 2em;
+    margin: 4em;
     font-family: "Courier New", serif;
 }
 
@@ -88,6 +88,18 @@ ul#about-menu li{
     max-width: 100%;
     padding-top: 2em;
 }
+
+.about-text {
+    column-count: 3;
+    column-gap: 40px;
+}
+
+@media only screen and (max-width: 678px) {
+    .about-text {
+        column-count: 1;
+    }
+}
+
 /*---------------*/
 
 /*Courses sidan*/
@@ -103,19 +115,32 @@ th, td {
 }
 
 .kurser {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width: 678px) {
-    .kurser {
 
+    table th {
+        display: none;
+    }
+
+    table tr {
+        display: block;
+        margin-bottom: .5em;
+    }
+
+    table td {
+        display: block;
+        font-size: .8em;
+        text-align: center;
     }
 }
 
 .skol-btn {
     border: transparent;
     font-style: italic;
-    color: #ffffff;
+    color: white;
     background-color: darkgoldenrod;
     text-decoration: none;
 }
@@ -123,7 +148,7 @@ th, td {
 
 /*Blog sidan*/
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 form {
@@ -144,6 +169,20 @@ input {
     display: block;
     margin: 2em;
 }
+
+@media only screen and (min-width: 678px) {
+    .row {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .column {
+        float: left;
+        width: 50%;
+        padding: 5px;
+    }
+}
+
 /*----------------*/
 
 /*Products sidan

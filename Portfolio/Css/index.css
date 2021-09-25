@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 4em;
+    font-family: "Courier New", serif;
+}
 /*Index sidan*/
 .index-image {
     background-image: url("../IMG/skog.JPG");
@@ -16,6 +24,7 @@
     top: 20%;
     width: 100%;
     font-size: 2em;
+    letter-spacing: .2em;
     color: white;
 }
 
