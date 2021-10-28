@@ -3,7 +3,7 @@
 }
 body {
     margin: 0;
-    padding: 1em;
+    padding: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/gothic.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -71,5 +71,15 @@ img {
 .card {
     border: none;
     max-width: 200px;
+    padding: 1em;
+}
+
+footer {
+    position: relative;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
     padding: 1em;
 }
