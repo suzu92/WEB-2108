@@ -4,11 +4,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/gothic.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
 }
 h1, h2, h3, p {
     color: white;
@@ -20,32 +15,32 @@ img {
     max-width: 1.5em;
 }
 .topnav {
-    overflow: hidden;
+    background-color: rgba(0, 0, 0, .6);
     background-image: url("img/gothic.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
     padding: 2em;
 }
 
 .topnav a {
-    float: left;
-    display: block;
+    display: inline-block;
+    padding: .5em;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 2em;
 }
 
 .topnav a:hover {
-    background-color: olive;
-    color: antiquewhite;
+    background-color: rgba(255, 255, 255, .3)
 }
 
 .searchbox {
     margin-top: .75em;
+    margin-left: 2em;
 }
 
 .cartbutton {
     margin-top: .75em;
+    margin-left: 2em;
 }
 
 .dropdown {
@@ -62,6 +57,14 @@ img {
 }
 .show {
     display: block;
+}
+
+.store-name {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 4em;
+    font-weight: normal;
+    color: white;
 }
 
 .grid-container {
