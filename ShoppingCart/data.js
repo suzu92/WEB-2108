@@ -1,56 +1,65 @@
-let data = [
-    {
-        src: './img/personaljesus.jpg',
-        album: 'Personal Jesus',
-        artists: 'Johnny Cash',
-        price: 159
-    },
-    {
-        src: './img/angryriver.jpg',
-        album: 'True Detective',
-        artists: 'Various Artists',
-        price: 169
-    },
-    {
-        src: './img/badthings.jpg',
-        album: 'Bad Things',
-        artists: 'Jace Everett',
-        price: 169
-    },
-    {
-        src: './img/conmancoming.jpg',
-        album: 'Boy From The North',
-        artists: 'Monica Heldal',
-        price: 179
-    },
-    {
-        src: './img/goodcompany.jpg',
-        album: 'Good Company',
-        artists: 'The Dead South',
-        price: 189
-    },
-    {
-        src: './img/gravedigger.jpg',
-        album: 'Dark Country 3',
-        artists: 'Blues Saraceno',
-        price: 159
-    },
-    {
-        src: './img/raisehell.jpg',
-        album: 'Rock Is Dead',
-        artists: 'Dorothy',
-        price: 169
-    },
-    {
-        src: './img/rosie.jpg',
-        album: 'Small Town Murders',
-        artists: 'Various Artists',
-        price: 179
-    },
-    {
-        src: './img/trouble.jpg',
-        album: 'Karma',
-        artists: 'Bellstop',
-        price: 179
+class Cd {
+    constructor(src, album, artist, price) {
+        this.src = src
+        this.album = album
+        this.artist = artist
+        this.price = price
     }
+}
+
+let data = [
+    new Cd(
+        './img/personaljesus.jpg',
+        'Personal Jesus',
+        'Johnny Cash',
+        159
+    ),
+    new Cd(
+        './img/angryriver.jpg',
+        'True Detective',
+        'Various Artists',
+        169
+    ),
+    new Cd(
+        './img/badthings.jpg',
+        'Bad Things',
+        'Jace Everett',
+        169
+    ),
+    new Cd(
+        './img/conmancoming.jpg',
+        'Boy From The North',
+        'Monica Heldal',
+        179
+    ),
+    new Cd(
+        './img/goodcompany.jpg',
+        'Good Company',
+        'The Dead South',
+        189
+    ),
+    new Cd(
+        './img/gravedigger.jpg',
+        'Dark Country 3',
+        'Blues Saraceno',
+        159
+    ),
+    new Cd(
+        './img/raisehell.jpg',
+        'Rock Is Dead',
+        'Dorothy',
+        169
+    ),
+    new Cd(
+        './img/rosie.jpg',
+        'Small Town Murders',
+        'Various Artists',
+        179
+    ),
+    new Cd(
+        './img/trouble.jpg',
+        'Karma',
+        'Bellstop',
+        179
+    )
 ]

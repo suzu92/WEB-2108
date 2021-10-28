@@ -16,12 +16,12 @@ function updateElementIdHtml(elementId, html) {
     document.getElementById(elementId).innerHTML = html
 }
 
-function generateSingleCard(cd) {
+/*function generateSingleCard(cd) {
     return `
     <article class='card'>
             <h3>${cd.album}</h3>
             <img alt="bild" src="${cd.src}"/>
-            <p>${cd.artists}</p>
+            <p>${cd.artist}</p>
             <p>${cd.price} kr</p>
             <button id='${cd.album}'>Buy</button>
         </article>
@@ -38,7 +38,7 @@ function updateContent() {
     updateElementIdHtml('card-contents', htmlElement)
 }
 
-updateContent()
+updateContent()*/
 
 let myCart = [
     {
