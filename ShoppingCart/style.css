@@ -5,11 +5,8 @@ body {
     margin: 0;
     padding: 0;
 }
-h1, h2, h3, p {
-    color: white;
-}
 img {
-    max-width: 7em;
+    max-width: 10em;
 }
 #cart {
     max-width: 1.5em;
@@ -41,6 +38,7 @@ img {
 .cartbutton {
     margin-top: .75em;
     margin-left: 2em;
+    padding-bottom: .5em;
 }
 
 .dropdown {
@@ -61,15 +59,20 @@ img {
 
 .store-name {
     text-align: center;
-    margin-top: 1em;
     font-size: 4em;
     font-weight: normal;
     color: white;
+}
+.store-about {
+    font-style: italic;
+    margin-left: 2em;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-left: 5em;
+    margin-right: 5em;
 }
 .card {
     border: none;

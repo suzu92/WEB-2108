@@ -19,11 +19,10 @@ function updateElementIdHtml(elementId, html) {
 function generateSingleCard(cd) {
     return `
     <article class='card'>
+            <h3>${cd.album}</h3>
             <img alt="bild" src="${cd.src}"/>
-            <h3>Album: ${cd.album}</h3>
-            <p>Artist: ${cd.artists}</p>
-            <p>Format: ${cd.format}</p>
-            <p>Price:  ${cd.price} kr</p>
+            <p>${cd.artists}</p>
+            <p>${cd.price} kr</p>
             <button id='${cd.album}'>Buy</button>
         </article>
     `
@@ -83,7 +82,7 @@ let myCart = [
 if (data[0].album === myCart[0].album){
     let num1 = data[0].price
     let num2 = myCart[0].quantity
-    product = num1 * num2
+    let product = num1 * num2
 }
 
 function itemAlreadyInCart(cd) {
