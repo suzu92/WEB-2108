@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 1em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/gothic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+h1, h2, h3, p {
+    color: white;
+}
+img {
+    max-width: 7em;
+}
+#cart {
+    max-width: 1.5em;
+}
+.topnav {
+    overflow: hidden;
+    background-image: url("img/gothic.jpg");
+    padding: 2em;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.topnav a:hover {
+    background-color: olive;
+    color: antiquewhite;
+}
+
+.searchbox {
+    margin-top: .75em;
+}
+
+.cartbutton {
+    margin-top: .75em;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 10em;
+    text-align: center;
+}
+.show {
+    display: block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card {
+    border: none;
+    max-width: 200px;
+    padding: 1em;
+}

@@ -7,8 +7,38 @@
     <link rel='stylesheet' href='style.css'>
 </head>
 <body>
-
-
-
+<nav>
+    <section class="topnav">
+        <a href="#">Albums</a>
+        <a href="#">New In</a>
+        <a href="#">Top List</a>
+        <a href="#">Gift Bundles</a>
+        <a href="#">Sale</a>
+        <label class="searchbox">
+            <input type="text" placeholder="Search.." name="search">
+        </label>
+        <button class="cartbutton" onclick='openMenu()' type="submit">
+            <img src="img/cart.jpg" alt="cart" id="cart">
+            Shopping Cart
+        </button>
+        <article id='dropdown' class='dropdown-content'>
+            <h2>Shopping Items</h2>
+            <p>Left to free shipping:</p>
+            <p>Have a nice day!</p>
+            <button onclick='closeMenu()'>
+                Close
+            </button>
+        </article>
+    </section>
+</nav>
+<main>
+    <section>
+        <h2>Southern Gothic</h2>
+        <p>Spooky season songs from the South.</p>
+    </section>
+    <section id='card-contents' class="grid-container">NONE</section>
+</main>
+<script src="data.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
