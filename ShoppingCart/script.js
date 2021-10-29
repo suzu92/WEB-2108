@@ -1,4 +1,4 @@
-function openMenu() {
+/*function openMenu() {
     document.getElementById('dropdown')
         .classList.toggle('show')
 }
@@ -6,7 +6,7 @@ function openMenu() {
 function closeMenu() {
     document.getElementById('dropdown')
         .classList.remove('show')
-}
+}*/
 
 function updateElementIdText(elementId, text) {
     document.getElementById(elementId).innerText = String(text)

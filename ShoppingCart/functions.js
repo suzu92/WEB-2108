@@ -82,3 +82,89 @@ function showShippingCost(shippingText) {
     `;
 }
 
+function openMenu() {
+    document.getElementById('dropdown')
+        .classList.toggle('show')
+}
+
+function closeMenu() {
+    document.getElementById('dropdown')
+        .classList.remove('show')
+}
+
+function updateCdInCart(id) {
+    let existInCart = false
+    for (const item of myCart) {
+        if (item.id === id) {
+            item.quantity += 1
+            item.totalSum = item.price * item.quantity;
+            existInCart = true;
+        }
+    }
+    return existInCart
+}
+
+function updateCdsInCartNewValue(id, newValue) {
+    let sumOfCds = 0
+    for (const item of myCart) {
+        if (item.id === id) {
+            item.quantity = newValue
+            item.totalSum = item.price * item.quantity;
+            sumOfCds = item.totalSum;
+        }
+    }
+    return sumOfCds
+}
+
+function calculateSum() {
+    totalCart = 0
+
+    for (const item of myCart) {
+        totalCart += parseInt(item.totalSum)
+    }
+    document.getElementById('sumOfCds').innerHTML = showTotalSum(totalCart)
+}
+
+function calculateShipping() {
+    let costToFreeFreight = 259 - totalCart;
+    let costTest = ""
+
+    if (costToFreeFreight <= 0) {
+        costTest = 'You have free shipping!'
+    } else {
+        costTest = 'You have' + costToFreeFreight + 'left to free shipping'
+    }
+    document.getElementById('shippingOfCds').innerHTML = showShippingCost(costTest)
+}
+
+function calculateQuantity() {
+    quantityCart = 0
+
+    for (const item of myCart) {
+        quantityCart += parseInt(item.quantity)
+    }
+    document.getElementById('quantityOfCds').innerHTML = showTotalQuantity(quantityCart)
+}
+
+function addMore(id) {
+    let newValue = document.getElementById('quantity' + id).value;
+    if (parseInt(newValue) <= 0) {
+        for (let i = 0; i < myCart.length; i++) {
+            if (myCart[i].id === id) {
+                myCart.splice(i, 1);
+                document.getElementById('cdToBuy' + id).remove()
+            }
+        }
+    }
+    else {
+        let totalSum = updateCdsInCartNewValue(id, newValue)
+        if(!!totalSum) {
+            document.getElementById('totalSum' + id).innerText = 'Total:' + totalSum + 'kr';
+        }
+    }
+    calculateSum()
+    calculateQuantity()
+    calculateShipping()
+}
+
+renderCart()
