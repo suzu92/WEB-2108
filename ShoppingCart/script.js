@@ -40,7 +40,7 @@ function updateContent() {
 
 updateContent()*/
 
-let myCart = [
+/*let myCart = [
     {
         album: 'Personal Jesus',
         quantity: '1'
@@ -77,7 +77,7 @@ let myCart = [
         album: 'Karma',
         quantity: '1'
     }
-];
+];*/
 
 if (data[0].album === myCart[0].album){
     let num1 = data[0].price

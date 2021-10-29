@@ -63,3 +63,14 @@ let data = [
         179
     )
 ]
+
+class CdToBuy {
+    constructor(src, album, artist, price) {
+        this.src = src
+        this.album = album
+        this.artist = artist
+        this.price = price
+        this.quantity = 1
+        this.totalSum = price
+    }
+}
