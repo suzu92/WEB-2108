@@ -1,23 +1,13 @@
-//gör cd synliga i html
-
-function showCd(cd) {
-    return `
-    <article id=cdToBuy>
-            <h3>${cd.album}</h3>
-            <img alt="bild" src="${cd.src}"/>
-            <p>${cd.artist}</p>
-            <p>${cd.price} kr</p>
-            <button onclick="btnBuy('${cd.src}', '${cd.album}', '${cd.artist}, '${cd.price})">Buy</button>
-        </article>
-   `;
+class CdToBuy {
+    constructor(src, album, artist, price) {
+        this.src = src
+        this.album = album
+        this.artist = artist
+        this.price = price
+        this.quantity = 1
+        this.totalSum = price
+    }
 }
-
-//loopar ut i html
-let renderCds = [];
-for (const cd of data) {
-    renderCds.push(showCd(cd))
-}
-document.getElementById('store-contents').innerHTML = renderCds
 
 //tom korg, antal i korg, summan av korg
 let myCart = [];
@@ -26,7 +16,7 @@ let quantityCart = [];
 
 //cd till korg
 function btnBuy(src, album, artist, price) {
-    let exist = updateCdToCart(id);
+    let exist = updateCdToCart();
 
     if (exist === false) {
         let newCd = new CdToBuy(src, album, artist, price)
@@ -47,12 +37,13 @@ function renderCart() {
     calculateShipping()
 }
 
-function showCds(cd) {
+function showCd(cd) {
     return `
     <article id='allAddedCds${cd.album}'>
         <p>${cd.album}</p>
         <img alt="bild" src="${cd.src}"/>
         <p>Price: ${cd.price}</p>
+        <input id="quantity${cd.id}" type="number" onclick="addMore('${cd.id}')" value="${cd.quantity}">
         <p id='totalSum${cd.album}'>Total: ${cd.totalSum} kr</p>
     </article>
         `;
@@ -92,12 +83,12 @@ function closeMenu() {
         .classList.remove('show')
 }
 
-function updateCdInCart(id) {
+function updateCdToCart(id) {
     let existInCart = false
-    for (const item of myCart) {
-        if (item.id === id) {
-            item.quantity += 1
-            item.totalSum = item.price * item.quantity;
+    for (const cd of myCart) {
+        if (cd.id === id) {
+            cd.quantity += 1
+            cd.totalSum = cd.price * cd.quantity;
             existInCart = true;
         }
     }
@@ -106,11 +97,11 @@ function updateCdInCart(id) {
 
 function updateCdsInCartNewValue(id, newValue) {
     let sumOfCds = 0
-    for (const item of myCart) {
-        if (item.id === id) {
-            item.quantity = newValue
-            item.totalSum = item.price * item.quantity;
-            sumOfCds = item.totalSum;
+    for (const cd of myCart) {
+        if (cd.id === id) {
+            cd.quantity = newValue
+            cd.totalSum = cd.price * cd.quantity;
+            sumOfCds = cd.totalSum;
         }
     }
     return sumOfCds
@@ -119,8 +110,8 @@ function updateCdsInCartNewValue(id, newValue) {
 function calculateSum() {
     totalCart = 0
 
-    for (const item of myCart) {
-        totalCart += parseInt(item.totalSum)
+    for (const cd of myCart) {
+        totalCart += parseInt(cd.totalSum)
     }
     document.getElementById('sumOfCds').innerHTML = showTotalSum(totalCart)
 }
@@ -140,8 +131,8 @@ function calculateShipping() {
 function calculateQuantity() {
     quantityCart = 0
 
-    for (const item of myCart) {
-        quantityCart += parseInt(item.quantity)
+    for (const cd of myCart) {
+        quantityCart += parseInt(cd.quantity)
     }
     document.getElementById('quantityOfCds').innerHTML = showTotalQuantity(quantityCart)
 }

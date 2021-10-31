@@ -1,4 +1,4 @@
-/*function openMenu() {
+function openMenu() {
     document.getElementById('dropdown')
         .classList.toggle('show')
 }
@@ -6,7 +6,7 @@
 function closeMenu() {
     document.getElementById('dropdown')
         .classList.remove('show')
-}*/
+}
 
 function updateElementIdText(elementId, text) {
     document.getElementById(elementId).innerText = String(text)
@@ -16,7 +16,7 @@ function updateElementIdHtml(elementId, html) {
     document.getElementById(elementId).innerHTML = html
 }
 
-/*function generateSingleCard(cd) {
+function generateSingleCard(cd) {
     return `
     <article class='card'>
             <h3>${cd.album}</h3>
@@ -38,9 +38,9 @@ function updateContent() {
     updateElementIdHtml('card-contents', htmlElement)
 }
 
-updateContent()*/
+updateContent()
 
-/*let myCart = [
+let myCart = [
     {
         album: 'Personal Jesus',
         quantity: '1'
@@ -77,7 +77,7 @@ updateContent()*/
         album: 'Karma',
         quantity: '1'
     }
-];*/
+];
 
 if (data[0].album === myCart[0].album){
     let num1 = data[0].price

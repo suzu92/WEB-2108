@@ -38,7 +38,17 @@ img {
 .cartbutton {
     margin-top: .75em;
     margin-left: 2em;
-    padding-bottom: .5em;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: .3em;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: bold;
+    padding: .5em;
+}
+
+.cartbutton:hover {
+    background-color: whitesmoke;
 }
 
 .dropdown {
@@ -75,6 +85,20 @@ img {
     border: none;
     max-width: 200px;
     padding: 1em;
+}
+
+.btn-buy {
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    font-family: "Times New Roman", sans-serif;
+    padding: .5em;
+}
+
+.btn-buy:hover {
+    background-color: whitesmoke;
 }
 
 footer {

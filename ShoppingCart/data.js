@@ -64,13 +64,23 @@ let data = [
     )
 ]
 
-class CdToBuy {
-    constructor(src, album, artist, price) {
-        this.src = src
-        this.album = album
-        this.artist = artist
-        this.price = price
-        this.quantity = 1
-        this.totalSum = price
-    }
+//gör cd synliga i html
+
+function showCd(cd) {
+    return `
+    <article id=cdToBuy>
+            <h3>${cd.album}</h3>
+            <img alt="bild" src="${cd.src}"/>
+            <p>${cd.artist}</p>
+            <p>${cd.price} kr</p>
+            <button class="btn-buy" onclick="btnBuy('${cd.src}', '${cd.album}', '${cd.artist}, '${cd.price})">Buy</button>
+        </article>
+   `;
 }
+
+//loopar ut i html
+let renderCd = [];
+for (const cd of data) {
+    renderCd.push(showCd(cd))
+}
+document.getElementById('store-contents').innerHTML = renderCd;
