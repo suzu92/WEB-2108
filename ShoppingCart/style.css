@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: lightgray;
 }
 
 img {
@@ -40,15 +41,15 @@ img {
 }
 
 .cartbutton {
-    margin-top: .75em;
-    margin-left: 2em;
+    margin: 1em;
     color: black;
     background-color: white;
     border: none;
     border-radius: .3em;
-    font-family: "Times New Roman", sans-serif;
     font-weight: bold;
-    padding: .5em;
+}
+.cartbutton:hover {
+    background-color: whitesmoke;
 }
 
 .header {
@@ -67,11 +68,7 @@ img {
     color: white;
 }
 
-.cartbutton:hover {
-    background-color: whitesmoke;
-}
-
-#dropdown {
+.dropdown {
     display: inline-block;
 }
 
@@ -82,6 +79,76 @@ img {
 }
 .show {
     display: block;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 35%;
+}
+
+.cart-title {
+    color: lightgray;
+    margin-left: .5em;
+    font-size: .5em;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    margin-right: 1.5em;
+    padding-bottom: .5em;
+    margin-top: .5em;
+}
+
+.cart-price {
+    width: 25%;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-quantity-input {
+    height: 2em;
+    width: 4em;
+    border-radius: .5em;
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 0;
+    text-align: center;
+    font-size: .25em;
+    margin-right: 25px;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: .5em;
+    color: black;
+    margin-right: 1.5em;
+}
+
+.cart-total-price {
+    color: black;
+    font-size: 1em;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
 }
 
 .btn-purchase {
@@ -162,6 +229,18 @@ img {
 
 .btn-buy:hover {
     background-color: whitesmoke;
+}
+
+.btn-remove {
+    color: white;
+    background-color: darkred;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-remove:hover {
+    background-color: lightpink;
 }
 
 footer {
