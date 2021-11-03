@@ -60,9 +60,9 @@ function addItemToCart(title, price, imageSrc) {
     let cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     let cartItems = document.getElementsByClassName('cart-items')[0]
-    let cartItemNames = cartItems.getElementsByClassName('cart-title')
+    let cartItemNames = cartItems.getElementsByClassName('item-title')
     for (let i = 0; i < cartItemNames.length; i++) {
-        if (cartItemNames[i].innerText === title) {
+        if (cartItemNames[i].innerText == title) {
             alert('This item is already added to the cart')
             return
         }
@@ -103,7 +103,7 @@ function updateCartTotal() {
         let quantity = quantityElement.value
         total += price * quantity;
     }
-    document.getElementsByClassName('cart-total-price')[0].innerText = total + 'kr'
+    document.getElementsByClassName('cart-total-price')[0].innerText = total + ' kr'
     checkFreeShipping(total);
 }
 
@@ -118,7 +118,7 @@ function checkFreeShipping(total) {
     } else {
         let shippingNumber = 259 - total;
         let freeShipping = document.getElementById('free-ship');
-        freeShipping.innerHTML = "Free shipping over 259kr (" + shippingNumber + "kr left)";
+        freeShipping.innerHTML = "Free shipping over 259 kr (" + shippingNumber + " kr left)";
     }
 }
 
