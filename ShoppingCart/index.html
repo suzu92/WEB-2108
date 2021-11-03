@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>RECORD STORE</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale1.0">
-    <title>RECORD STORE</title>
-    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<nav>
-    <section class="topnav">
+<header class="header">
+    <nav class="topnav">
         <a href="#">RECORDS</a>
         <a href="#">NEW IN</a>
         <a href="#">TOP LIST</a>
@@ -19,37 +19,114 @@
         </label>
         <button class="cartbutton" onclick='openMenu()' type="submit">
             <img src="img/cart.jpg" alt="cart" id="cart">
-            Shopping Cart
+            SHOPPING CART
         </button>
+    </nav>
+    <h1 class="store-name">SOUTHERN GOTHIC</h1>
+    <section class="store-name">
         <article id='dropdown' class='dropdown-content'>
-            <h2>Shopping Items</h2>
-            <div id="allAddedCds"></div>
-            <div id="sumOfCds"></div>
-            <div id="quantityOfCds"></div>
-            <p>Left to free shipping:</p>
-            <div id="shippingOfCds"></div>
-            <p>Have a nice day!</p>
-            <button class="cartbutton" onclick='closeMenu()'>
-                Close
-            </button>
+            <article class="grid-container">
+                <div class="cart-row">
+                    <span class="cart-item">ITEM</span>
+                    <span class="cart-price">PRICE</span>
+                    <span class="cart-quantity">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">0 kr</span>
+                    <p id="free-ship"></p>
+                </div>
+                <button onclick='closeMenu()' class="btn-purchase" type="button">
+                    PURCHASE
+                </button>
+            </article>
         </article>
-        <hr>
-        <h1 class="store-name">SOUTHERN GOTHIC</h1>
     </section>
-</nav>
-<main>
-    <section class="store-about">
-        <p>Spooky season songs from the South.</p>
+</header>
+<section class="grid-container">
+    <p class="store-about">Spooky season songs from the South.</p>
+    <section class="store-items">
+        <article class="store-item">
+            <span class="item-title">Personal Jesus</span>
+            <img class="item-image" src="img/personaljesus.jpg" alt="johnny">
+            <div class="item-details">
+                <span class="item-price">129 kr</span>
+                <button class="btn-buy" type="button">BUY</button>
+            </div>
+        </article>
+        <article class="store-item">
+            <span class="item-title">True Detective</span>
+            <img class="item-image" src="img/angryriver.jpg" alt="tv-serie">
+            <div class="item-details">
+                <span class="item-price">159 kr</span>
+                <button class="btn-buy" type="button">BUY</button>
+            </div>
+        </article>
+        <article class="store-item">
+            <span class="item-title">Jace Everett</span>
+            <img class="item-image" src="img/badthings.jpg" alt="true-blood">
+            <div class="item-details">
+                <span class="item-price">189 kr</span>
+                <button class="btn-buy" type="button">BUY</button>
+            </div>
+        </article>
+        <article class="store-item">
+            <span class="item-title">Boy From The North</span>
+            <img class="item-image" src="img/conmancoming.jpg" alt="monica">
+            <div class="item-details">
+                <span class="item-price">189 kr</span>
+                <button class="btn-buy" type="button">BUY</button>
+            </div>
+        </article>
+        <article class="store-item">
+            <span class="item-title">Good Company</span>
+            <img class="item-image" src="img/goodcompany.jpg" alt="south">
+            <div class="item-details">
+                <span class="item-price">169 kr</span>
+                <button class="btn-buy" type="button">BUY</button>
+            </div>
+        </article>
+        <article class="store-item">
+            <span class="item-title">Dark Country 3</span>
+            <img class="item-image" src="img/gravedigger.jpg" alt="blue">
+            <div class="item-details">
+                <span class="item-price">189 kr</span>
+                <button class="btn-buy" type="button">BUY</button>
+            </div>
+        </article>
+        <article class="store-item">
+            <span class="item-title">Rock is dead</span>
+            <img class="item-image" src="img/raisehell.jpg" alt="dorothy">
+            <div class="item-details">
+                <span class="item-price">149 kr</span>
+                <button class="btn-buy" type="button">BUY</button>
+            </div>
+        </article>
+        <article class="store-item">
+            <span class="item-title">Small Town Murders</span>
+            <img class="item-image" src="img/rosie.jpg" alt="rosie">
+            <div class="item-details">
+                <span class="item-price">179 kr</span>
+                <button class="btn-buy" type="button">BUY</button>
+            </div>
+        </article>
+        <article class="store-item">
+            <span class="item-title">Karma</span>
+            <img class="item-image" src="img/trouble.jpg" alt="bellstop">
+            <div class="item-details">
+                <span class="item-price">189 kr</span>
+                <button class="btn-buy" type="button">BUY</button>
+            </div>
+        </article>
     </section>
-    <section id='store-contents' class="grid-container">NONE</section>
-</main>
+</section>
 <footer>
     <p>
         Album store demo
     </p>
 </footer>
-<script src="data.js"></script>
-<script src="functions.js"></script>
-<!--<script src="script.js"></script>-->
+<script src="script.js"></script>
 </body>
 </html>
