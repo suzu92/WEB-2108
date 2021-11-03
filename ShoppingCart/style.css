@@ -75,7 +75,7 @@ img {
 .dropdown-content {
     display: none;
     color: white;
-    background-color: rgba(255, 255, 255, .3)
+    background-color: rgba(255, 255, 255, .3);
 }
 .show {
     display: block;
