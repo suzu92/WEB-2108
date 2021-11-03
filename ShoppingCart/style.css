@@ -1,16 +1,20 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     padding: 0;
 }
+
 img {
     max-width: 10em;
 }
+
 #cart {
     max-width: 1.5em;
 }
+
 .topnav {
     background-color: rgba(0, 0, 0, .6);
     background-image: url("img/gothic.jpg");
@@ -47,11 +51,27 @@ img {
     padding: .5em;
 }
 
+.header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("img/gothic.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.store-name {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 4em;
+    font-weight: normal;
+    color: white;
+}
+
 .cartbutton:hover {
     background-color: whitesmoke;
 }
 
-.dropdown {
+#dropdown {
     display: inline-block;
 }
 
@@ -62,6 +82,21 @@ img {
 }
 .show {
     display: block;
+}
+
+.btn-purchase {
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    font-family: "Times New Roman", sans-serif;
+    padding: 1em;
+    margin-left: 1em;
+}
+
+.btn-purchase:hover {
+    background-color: whitesmoke;
 }
 
 .store-name {
@@ -75,16 +110,43 @@ img {
     margin-left: 2em;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 5em;
-    margin-right: 5em;
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 1.5em;
 }
-.card {
-    border: none;
-    max-width: 200px;
+
+.store-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.store-item {
+    margin: 2em;
+}
+
+.item-title {
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.item-image {
+    width: 20em;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
     padding: 1em;
+}
+
+.item-price {
+    color: black;
 }
 
 .btn-buy {
@@ -94,7 +156,8 @@ img {
     border-radius: .3em;
     font-weight: bold;
     font-family: "Times New Roman", sans-serif;
-    padding: .5em;
+    padding: 1em;
+    margin-left: 1em;
 }
 
 .btn-buy:hover {
