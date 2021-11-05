@@ -1,4 +1,4 @@
-##Projektuppgift: gör en fungerande kundkorg  
+##Projektuppgift: gör en fungerande kundkorg 
 
 Uppgiften går ut på att vi ska göra en sida med album som kan läggas i kundkorgen.
 Funktionerna som ska vara med i inlämningen är:
@@ -89,10 +89,7 @@ gör precis vad en skriver åt det att göra. Kan bli otroligt kul att bygga fle
 
 *Motivera en specifik lösning jag valde.*
 
-Jag valde att lägga onClick på alla mina knappar och koppla dom till funktioner istället för eventListeners.
-Har för mig att vi gick igenom det vid något tillfälle i klassen men så här hade jag lättare förståelse för 
-vad jag gjorde och vad knapparna skulle göra. Jag valde även for loops istället för
-for of loops. Fick inte riktigt ordning på hur jag skulle göra dem.
+Jag valde även for loops istället för for of loops. Fick inte riktigt ordning på hur jag skulle göra dem.
 
 *Lämna förslag på förbättringar av min kod*
 
