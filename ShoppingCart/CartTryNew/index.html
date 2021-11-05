@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecordStore</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+
+<header class="header">
+    <section>
+        <p>Spooky Songs From The South..</p>
+    </section>
+    <section>
+        <label id="search"><input type="text" value="Search"></label>
+    </section>
+    <section>
+        <div class="dropdown">
+            <button class="dropdown-button" onclick="openMenu()">
+                <img src="img/cart.jpg" alt="cart" class="symbol"> CART
+            </button>
+            <div id="dropdown" class="dropdown-content">
+                <p>Your music</p>
+                <section>
+                    <article id="allAddedRecords">
+                    </article>
+                    <article id="totalSumOfAddedRecords">
+                    </article>
+                    <article id="totalQuantityOfAddedRecords">
+                    </article>
+                    <article id="totalShippingOfAddedRecords">
+                    </article>
+                    <section>
+                        <button onclick="buy()">
+                            Purchase
+                        </button>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </section>
+</header>
+
+<nav>
+    <a href="#">RECORDS</a>
+    <a href="#">NEW IN</a>
+    <a href="#">TOP LIST</a>
+    <a href="#">GIFT BUNDLES</a>
+    <a href="#">SALE</a>
+</nav>
+
+<main>
+    <section class="main-text">
+        <h1>Gothic South</h1>
+        <p>Remember you have free shipping over 259 kr.</p>
+    </section>
+    <section class="records">
+        <section>
+            <article></article>
+        </section>
+        <section>
+            <article>
+                <section id="allRecords"></section>
+            </article>
+        </section>
+        <section>
+            <article></article>
+        </section>
+    </section>
+</main>
+
+<script src="functions.js"></script>
+<script src="data.js"></script>
+
+</body>
+</html>
